@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A price comparison app for Kenyan online stores: one search checks seven stores, groups the same product across them, hides junk listings and keeps a price history.">
+<meta name="theme-color" content="#0b0c0a">
+<meta property="og:type" content="website">
+<meta property="og:title" content="BeiSmart KE — Case Study | Benedict Ngetich">
+<meta property="og:description" content="A price comparison app for Kenyan online stores: one search checks seven stores, groups the same product across them, hides junk listings and keeps a price history.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<title>BeiSmart KE — Case Study | Benedict Ngetich</title>
+<script>document.documentElement.className='js'</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="nav">
+<div class="pillnav">
+<span class="brand">Benedict Ngetich</span>
+<nav aria-label="Sections"><a href="index.html#about">About</a><a href="index.html#services">Services</a><a href="index.html#work">Work</a><a href="index.html#faq">FAQ</a></nav>
+<a class="btn" href="index.html#contact">Hire me</a>
+</div>
+</div>
+
+<div class="wrap" id="main">
+<a class="backlink" href="index.html#work">&larr; Back to projects</a>
+
+<header class="case-hero">
+<p class="eyebrow">// Case study</p>
+<h1>BeiSmart KE</h1>
+<p class="tagline">A price comparison app for Kenyan online stores. One search checks seven stores, puts the same product's prices side by side, hides accessories and junk listings, and keeps a price history for every product.</p>
+<div class="case-tags"><span>Final-year project, rebuilt 2026</span><span>Python</span><span>FastAPI</span><span>SQLite</span><span>Playwright</span><span>No framework</span></div>
+<div class="demo-cta">
+<a class="btn" href="https://benvog.github.io/beismart-ke/" target="_blank" rel="noopener">Try the live demo ↗</a>
+<p>A read-only snapshot of six stores (Amazon is left out), refreshed every day. The code is <a href="https://github.com/Benvog/beismart-ke" target="_blank" rel="noopener">on GitHub ↗</a>.</p>
+</div>
+<div class="case-hero-img frame">
+<div class="bar"><i></i><i></i><i></i><span>benvog.github.io/beismart-ke</span></div>
+<div class="view"><div class="inner"><img src="assets/beismart-home.jpg" alt="BeiSmart KE home: a search box over this week's price drops" width="1280" height="800"></div></div>
+</div>
+</header>
+
+<section>
+<h2>Quick facts</h2>
+<div class="quickfacts">
+<div class="card rv"><span>Type</span><span>Final-year project, rebuilt from scratch in 2026</span></div>
+<div class="card rv"><span>Stack</span><span>Python, FastAPI, SQLite, Playwright, vanilla JS</span></div>
+<div class="card rv"><span>Stores</span><span>Jumia, Kilimall, Avechi, Hotpoint, Carrefour, Phone Place, Amazon</span></div>
+<div class="card rv"><span>Status</span><span>Live demo, prices checked daily</span></div>
+</div>
+</section>
+
+<section>
+<p class="eyebrow">// The problem</p>
+<h2>Ten tabs, and no way to tell a real deal</h2>
+<p class="lede">Comparing prices across Kenyan online stores means opening a tab per store. The listings are noisy, with accessories, "free gift" bundles and inflated discounts mixed in. And a single look at today's price can't tell a real deal from a price that was raised just before a "sale".</p>
+</section>
+
+<section>
+<p class="eyebrow">// How it works</p>
+<h2>From one search to a price history</h2>
+
+<div class="feat rv">
+<div>
+<h3>One search, every store</h3>
+<p>A search runs across all the stores at once and groups the same product, so its prices sit side by side. Filters cover price (with a histogram of the results), store and condition.</p>
+<p>If a store fails, the rest of the results still load, and each store reports what happened: ok, empty, blocked, layout changed or timed out.</p>
+</div>
+<figure class="shot tall"><img src="assets/beismart-results.jpg" alt="Samsung TV results with a filter panel and a TV found at three stores" width="1280" height="1700" loading="lazy"></figure>
+</div>
+
+<div class="feat rv">
+<div>
+<h3>Every offer and its price history</h3>
+<p>A product page lists every offer for it, cheapest first, with a chart of how its price has moved. Every price change is recorded, so the history grows each day. Tracking began on 3 October 2026.</p>
+<p>Amazon prices leave out delivery and import fees, so they're labelled as international and never count as a price drop.</p>
+</div>
+<figure class="shot tall"><img src="assets/beismart-product.jpg" alt="Samsung Galaxy A36 across 18 offers from 3 stores, with its price history chart" width="1280" height="1500" loading="lazy"></figure>
+</div>
+
+<div class="feat rv">
+<div>
+<h3>Built for a phone too</h3>
+<p>On a phone the filters open as a bottom sheet, and the button shows how many results are left before you apply them.</p>
+<p>The app works with a keyboard alone ("/" jumps to search, Esc closes the filters), has light and dark themes, and passed an automated accessibility audit (axe-core) on every screen with no problems.</p>
+</div>
+<figure class="shot phone"><img src="assets/beismart-filters-phone.png" alt="Filters on a phone: price histogram, stores, condition and a Show 27 results button" width="390" height="844" loading="lazy"></figure>
+</div>
+
+<div class="feat rv">
+<div>
+<h3>A watchlist and price alerts</h3>
+<p>Products can be saved to a watchlist in the browser, which shows how each price has changed since it was saved.</p>
+<p>In the full app you can also set a target price and get an email when a product drops to it. Alerts aren't in the read-only demo.</p>
+</div>
+<figure class="shot"><img src="assets/beismart-watchlist.jpg" alt="Watchlist of four saved products, each cheaper than when it was saved" width="1280" height="900" loading="lazy"></figure>
+</div>
+</section>
+
+<section>
+<p class="eyebrow">// The hard part</p>
+<h2>Getting honest data</h2>
+<p class="lede">Drawing the pages was the easy part. The work was in getting prices that can be trusted.</p>
+<div class="steps">
+<div class="card step rv"><span class="num">01</span><h3>Stores that fight back</h3><p>Four of the seven stores only work in a real browser. Jumia sits behind Cloudflare and lets only real Chrome through, Amazon sometimes shows a bot check, and Hotpoint's class names change on every deploy, so the scraper matches only their stable parts.</p></div>
+<div class="card step rv"><span class="num">02</span><h3>Matching products</h3><p>Rules, not AI: each title is reduced to brand, model, size or storage, and new or refurbished. Listings merge only when all four are known and equal, because pricing two different TVs as one is worse than missing a match.</p></div>
+<div class="card step rv"><span class="num">03</span><h3>Hiding junk</h3><p>Accessories and listings that are far too cheap to be real are hidden, each with a visible reason. The rules were tuned on real listings: words like "bag" were dropped because they hid real laptops sold with one.</p></div>
+</div>
+</section>
+
+<section>
+<p class="eyebrow">// See it run</p>
+<h2>A minute in the app</h2>
+<p class="lede">Searching, sorting and filtering, a product's price chart, then saving it to the watchlist.</p>
+<figure class="shot rv"><video src="assets/beismart-demo.webm" poster="assets/beismart-home.jpg" width="1280" height="800" controls preload="none" playsinline aria-label="Screen recording of BeiSmart KE: a search for Samsung, filters, a product's price chart and the watchlist"></video></figure>
+</section>
+
+<section>
+<p class="eyebrow">// Status</p>
+<h2>Where it stands</h2>
+<div class="quickfacts">
+<div class="card rv"><span>Daily refresh</span><span>19 searches, about 1,500 listings, in about 6 minutes</span></div>
+<div class="card rv"><span>Matched</span><span>83 products found at two or more stores (as of 5 Oct 2026)</span></div>
+<div class="card rv"><span>Tests</span><span>317 automated tests, all offline</span></div>
+<div class="card rv"><span>Demo</span><span>A static export of the same data, published after each daily check</span></div>
+</div>
+<p class="lede">Scraping needs real Chrome and a home connection, since stores would likely block a server's address. So the full app runs on my PC and refreshes on a schedule, and the public demo is a static snapshot on GitHub Pages. The site reads either the live API or the snapshot through one small data layer, so every screen works in both. Nobody uses it yet, and about 44% of products still can't be pinned to a brand and model, so they're shown on their own.</p>
+<p class="lede">The first version was my final-year project, a Flask app with a Figma prototype and Draw.io system diagrams. In 2026 I rebuilt it from scratch.</p>
+</section>
+
+<section>
+<div class="nextproj card rv">
+<span>Next project</span>
+<a href="case-voting.html">Voting System →</a>
+</div>
+</section>
+
+</div>
+
+<footer>
+<div class="footer-name">Benedict Ngetich</div>
+<div class="footer-links">
+<a href="index.html#about">About</a><a href="index.html#work">Work</a><a href="index.html#faq">FAQ</a><a href="index.html#contact">Contact</a>
+</div>
+<div class="socials">
+<a href="https://github.com/Benvog" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+<a href="https://www.linkedin.com/in/benedict-kipkorir-vogue" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+<a href="https://wa.me/254748311310" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+<a href="mailto:techsavvyzone@gmail.com" aria-label="Email" title="Email"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg></a>
+</div>
+<div class="wrap footer-bottom"><span>© 2026 Benedict Ngetich. All rights reserved.</span><a href="mailto:techsavvyzone@gmail.com">techsavvyzone@gmail.com</a></div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
