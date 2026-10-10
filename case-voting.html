@@ -36,7 +36,7 @@
 <a class="backlink" href="index.html#work">&larr; Back to projects</a>
 
 <header class="case-hero">
-<p class="eyebrow">// Case study</p>
+<p class="eyebrow">Case study</p>
 <h1>Voting System</h1>
 <p class="tagline">An online election system in plain PHP. Voters log in with their registration number and a PIN, vote one position at a time, and see results the moment voting closes.</p>
 <div class="case-tags"><span>University project</span><span>PHP 8</span><span>MySQL</span><span>JavaScript</span><span>No framework</span></div>
@@ -53,21 +53,21 @@
 <section>
 <h2>Quick facts</h2>
 <div class="quickfacts">
-<div class="card rv"><span>Type</span><span>University project</span></div>
-<div class="card rv"><span>Stack</span><span>PHP 8, PDO, MySQL, vanilla JS</span></div>
-<div class="card rv"><span>User roles</span><span>Voter and admin</span></div>
-<div class="card rv"><span>Status</span><span>Live demo</span></div>
+<div class="card"><span>Type</span><span>University project</span></div>
+<div class="card"><span>Stack</span><span>PHP 8, PDO, MySQL, vanilla JS</span></div>
+<div class="card"><span>User roles</span><span>Voter and admin</span></div>
+<div class="card"><span>Status</span><span>Live demo</span></div>
 </div>
 </section>
 
 <section>
-<p class="eyebrow">// The problem</p>
+<p class="eyebrow">The problem</p>
 <h2>Only registered voters, one vote per position</h2>
 <p class="lede">An election system has to hold two rules at once: only registered voters can vote, and nobody votes twice for the same position. It also has to stay simple enough for an admin to run without technical help, and fair enough that a running count can't sway the people still voting.</p>
 </section>
 
 <section>
-<p class="eyebrow">// How it works</p>
+<p class="eyebrow">How it works</p>
 <h2>From login to results</h2>
 
 <div class="feat rv">
@@ -108,27 +108,27 @@
 </section>
 
 <section>
-<p class="eyebrow">// Security</p>
+<p class="eyebrow">Security</p>
 <h2>Built with the basics covered</h2>
 <div class="steps">
-<div class="card step rv"><span class="num">01</span><h3>Logins</h3><p>PINs and passwords are stored hashed. Five failed attempts lock an ID for 15 minutes, unknown IDs take as long to check as real ones, and the session is regenerated on login.</p></div>
-<div class="card step rv"><span class="num">02</span><h3>Requests</h3><p>CSRF tokens on every form, prepared PDO statements for every query, and a voter's active status re-checked on every request so access can be cut off at once.</p></div>
-<div class="card step rv"><span class="num">03</span><h3>Votes</h3><p>The database itself rejects a second vote for the same position, even if two requests arrive at once. Whole ballots are saved in one transaction.</p></div>
+<div class="card step"><span class="num">01</span><h3>Logins</h3><p>PINs and passwords are stored hashed. Five failed attempts lock an ID for 15 minutes, unknown IDs take as long to check as real ones, and the session is regenerated on login.</p></div>
+<div class="card step"><span class="num">02</span><h3>Requests</h3><p>CSRF tokens on every form, prepared PDO statements for every query, and a voter's active status re-checked on every request so access can be cut off at once.</p></div>
+<div class="card step"><span class="num">03</span><h3>Votes</h3><p>The database itself rejects a second vote for the same position, even if two requests arrive at once. Whole ballots are saved in one transaction.</p></div>
 </div>
 </section>
 
 <section>
-<p class="eyebrow">// What's next</p>
+<p class="eyebrow">What's next</p>
 <h2>What I'd do next</h2>
 <p class="lede">What it would still need before running a real election.</p>
 <div class="steps nextsteps">
-<div class="card step rv"><h3>Anonymous ballots</h3><p>Right now each vote is stored with the voter's ID, so anyone with database access can see who voted for whom. I'd record <i>that</i> someone voted separately from <i>what</i> they voted, so the two can't be linked.</p></div>
-<div class="card step rv"><h3>Hosting for a real election</h3><p>The demo runs on free hosting, which is fine for trying it out. A real election would need paid hosting with its own domain and regular database backups.</p></div>
+<div class="card step"><h3>Anonymous ballots</h3><p>Right now each vote is stored with the voter's ID, so anyone with database access can see who voted for whom. I'd record <i>that</i> someone voted separately from <i>what</i> they voted, so the two can't be linked.</p></div>
+<div class="card step"><h3>Hosting for a real election</h3><p>The demo runs on free hosting, which is fine for trying it out. A real election would need paid hosting with its own domain and regular database backups.</p></div>
 </div>
 </section>
 
 <section>
-<div class="nextproj card rv">
+<div class="nextproj card">
 <span>Next project</span>
 <a href="case-tracehub.html">TraceHub →</a>
 </div>

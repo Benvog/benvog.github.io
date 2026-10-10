@@ -37,7 +37,7 @@ if (form) {
       error.hidden = false;
     } finally {
       button.disabled = false;
-      button.textContent = "Send";
+      button.textContent = "Send message";
     }
   });
   done.querySelector("button").addEventListener("click", () => {

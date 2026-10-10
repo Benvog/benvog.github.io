@@ -36,7 +36,7 @@
 <a class="backlink" href="index.html#work">&larr; Back to projects</a>
 
 <header class="case-hero">
-<p class="eyebrow">// Case study</p>
+<p class="eyebrow">Case study</p>
 <h1>BeiSmart KE</h1>
 <p class="tagline">A price comparison app for Kenyan online stores. One search checks seven stores, puts the same product's prices side by side, hides accessories and junk listings, and keeps a price history for every product.</p>
 <div class="case-tags"><span>Final-year project, rebuilt 2026</span><span>Python</span><span>FastAPI</span><span>SQLite</span><span>Playwright</span><span>No framework</span></div>
@@ -53,21 +53,21 @@
 <section>
 <h2>Quick facts</h2>
 <div class="quickfacts">
-<div class="card rv"><span>Type</span><span>Final-year project, rebuilt from scratch in 2026</span></div>
-<div class="card rv"><span>Stack</span><span>Python, FastAPI, SQLite, Playwright, vanilla JS</span></div>
-<div class="card rv"><span>Stores</span><span>Jumia, Kilimall, Avechi, Hotpoint, Carrefour, Phone Place, Amazon</span></div>
-<div class="card rv"><span>Status</span><span>Live demo, prices checked daily</span></div>
+<div class="card"><span>Type</span><span>Final-year project, rebuilt from scratch in 2026</span></div>
+<div class="card"><span>Stack</span><span>Python, FastAPI, SQLite, Playwright, vanilla JS</span></div>
+<div class="card"><span>Stores</span><span>Jumia, Kilimall, Avechi, Hotpoint, Carrefour, Phone Place, Amazon</span></div>
+<div class="card"><span>Status</span><span>Live demo, prices checked daily</span></div>
 </div>
 </section>
 
 <section>
-<p class="eyebrow">// The problem</p>
+<p class="eyebrow">The problem</p>
 <h2>Ten tabs, and no way to tell a real deal</h2>
 <p class="lede">Comparing prices across Kenyan online stores means opening a tab per store. The listings are noisy, with accessories, "free gift" bundles and inflated discounts mixed in. And a single look at today's price can't tell a real deal from a price that was raised just before a "sale".</p>
 </section>
 
 <section>
-<p class="eyebrow">// How it works</p>
+<p class="eyebrow">How it works</p>
 <h2>From one search to a price history</h2>
 
 <div class="feat rv">
@@ -108,38 +108,38 @@
 </section>
 
 <section>
-<p class="eyebrow">// The hard part</p>
+<p class="eyebrow">The hard part</p>
 <h2>Getting honest data</h2>
 <p class="lede">Drawing the pages was the easy part. The work was in getting prices that can be trusted.</p>
 <div class="steps">
-<div class="card step rv"><span class="num">01</span><h3>Stores that fight back</h3><p>Four of the seven stores only work in a real browser. Jumia sits behind Cloudflare and lets only real Chrome through, Amazon sometimes shows a bot check, and Hotpoint's class names change on every deploy, so the scraper matches only their stable parts.</p></div>
-<div class="card step rv"><span class="num">02</span><h3>Matching products</h3><p>Rules, not AI: each title is reduced to brand, model, size or storage, and new or refurbished. Listings merge only when all four are known and equal, because pricing two different TVs as one is worse than missing a match.</p></div>
-<div class="card step rv"><span class="num">03</span><h3>Hiding junk</h3><p>Accessories and listings that are far too cheap to be real are hidden, each with a visible reason. The rules were tuned on real listings: words like "bag" were dropped because they hid real laptops sold with one.</p></div>
+<div class="card step"><span class="num">01</span><h3>Stores that fight back</h3><p>Four of the seven stores only work in a real browser. Jumia sits behind Cloudflare and lets only real Chrome through, Amazon sometimes shows a bot check, and Hotpoint's class names change on every deploy, so the scraper matches only their stable parts.</p></div>
+<div class="card step"><span class="num">02</span><h3>Matching products</h3><p>Rules, not AI: each title is reduced to brand, model, size or storage, and new or refurbished. Listings merge only when all four are known and equal, because pricing two different TVs as one is worse than missing a match.</p></div>
+<div class="card step"><span class="num">03</span><h3>Hiding junk</h3><p>Accessories and listings that are far too cheap to be real are hidden, each with a visible reason. The rules were tuned on real listings: words like "bag" were dropped because they hid real laptops sold with one.</p></div>
 </div>
 </section>
 
 <section>
-<p class="eyebrow">// See it run</p>
+<p class="eyebrow">See it run</p>
 <h2>A minute in the app</h2>
 <p class="lede">Searching, sorting and filtering, a product's price chart, then saving it to the watchlist.</p>
 <figure class="shot rv"><video src="assets/beismart-demo.webm" poster="assets/beismart-home.jpg" width="1280" height="800" controls preload="none" playsinline aria-label="Screen recording of BeiSmart KE: a search for Samsung, filters, a product's price chart and the watchlist"></video></figure>
 </section>
 
 <section>
-<p class="eyebrow">// Status</p>
+<p class="eyebrow">Status</p>
 <h2>Where it stands</h2>
 <div class="quickfacts">
-<div class="card rv"><span>Daily refresh</span><span>19 searches, about 1,500 listings, in about 6 minutes</span></div>
-<div class="card rv"><span>Matched</span><span>83 products found at two or more stores (as of 5 Oct 2026)</span></div>
-<div class="card rv"><span>Tests</span><span>317 automated tests, all offline</span></div>
-<div class="card rv"><span>Demo</span><span>A static export of the same data, published after each daily check</span></div>
+<div class="card"><span>Daily refresh</span><span>19 searches, about 1,500 listings, in about 6 minutes</span></div>
+<div class="card"><span>Matched</span><span>83 products found at two or more stores (as of 5 Oct 2026)</span></div>
+<div class="card"><span>Tests</span><span>317 automated tests, all offline</span></div>
+<div class="card"><span>Demo</span><span>A static export of the same data, published after each daily check</span></div>
 </div>
 <p class="lede">Scraping needs real Chrome and a home connection, since stores would likely block a server's address. So the full app runs on my PC and refreshes on a schedule, and the public demo is a static snapshot on GitHub Pages. The site reads either the live API or the snapshot through one small data layer, so every screen works in both. Nobody uses it yet, and about 44% of products still can't be pinned to a brand and model, so they're shown on their own.</p>
 <p class="lede">The first version was my final-year project, a Flask app with a Figma prototype and Draw.io system diagrams. In 2026 I rebuilt it from scratch.</p>
 </section>
 
 <section>
-<div class="nextproj card rv">
+<div class="nextproj card">
 <span>Next project</span>
 <a href="case-voting.html">Voting System →</a>
 </div>
