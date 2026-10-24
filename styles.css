@@ -1,4 +1,4 @@
-:root{--bg:#0b0c0a;--ink:#f2f2ec;--muted:#9a9c92;--line:#25271f;--lime:#c6f432;--panel:#12140f;--panel2:#161811;--h:250px}
+:root{--bg:#0b0c0a;--ink:#f2f2ec;--muted:#9a9c92;--line:#25271f;--lime:#b8dc4a;--panel:#12140f;--panel2:#161811;--h:250px}
 *{box-sizing:border-box}
 [hidden]{display:none!important}
 html{scroll-behavior:smooth}
@@ -36,7 +36,7 @@ img{max-width:100%;display:block}
 .photo{position:relative;justify-self:center;width:min(320px,80%)}
 .photo .frame-ph{aspect-ratio:4/5;border-radius:20px;background:linear-gradient(160deg,#1a1d13,#0e0f0b);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:.85rem;text-align:center;padding:20px}
 .photo img{border-radius:20px;aspect-ratio:4/5;object-fit:cover}
-.status{display:inline-flex;align-items:center;gap:8px;font-size:.82rem;color:#a8e06a;border:1px solid #2a3a1a;background:rgba(198,244,50,.08);padding:5px 12px;border-radius:99px;margin-bottom:18px}
+.status{display:inline-flex;align-items:center;gap:8px;font-size:.82rem;color:#a8e06a;border:1px solid #2a3a1a;background:rgba(184,220,74,.08);padding:5px 12px;border-radius:99px;margin-bottom:18px}
 .status i{position:relative;width:8px;height:8px;border-radius:50%;background:var(--lime)}
 .status i::after{content:"";position:absolute;inset:0;border-radius:50%;background:var(--lime);animation:pulse 1.8s ease infinite}
 @keyframes pulse{from{transform:scale(1);opacity:.5}to{transform:scale(3.25);opacity:0}}
@@ -129,7 +129,7 @@ form{display:grid;gap:22px;max-width:520px}
 label{font-size:.9rem;color:var(--muted);display:block}
 input,textarea{width:100%;background:transparent;border:0;border-bottom:1px solid var(--muted);padding:10px 0;color:var(--ink);font:inherit;border-radius:0}
 input:focus,textarea:focus{border-color:var(--lime);outline:0}
-input:focus-visible,textarea:focus-visible{outline:0;box-shadow:0 2px 0 var(--lime);background:rgba(198,244,50,.06)}
+input:focus-visible,textarea:focus-visible{outline:0;box-shadow:0 2px 0 var(--lime);background:rgba(184,220,74,.06)}
 textarea{min-height:110px;resize:vertical}
 form .btn{justify-self:start}
 form .btn[disabled]{opacity:.6;cursor:progress}
