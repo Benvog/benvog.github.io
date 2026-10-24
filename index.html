@@ -20,7 +20,7 @@
 <script>document.documentElement.className='js'</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=DM+Sans:wght@400;500;600&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -38,7 +38,7 @@
 
 <header class="hero">
 <div>
-<h1>Hi, I'm Benedict.<br>I build web systems that replace manual work.</h1>
+<h1>Hi, I'm Benedict.<br>I build web systems that replace <em>manual work.</em></h1>
 <p class="sub">Final-year Computer Science student at Kabarak University and freelance developer in Kenya. I turn messy manual processes into working web apps.</p>
 <div class="cta"><a class="btn" href="#contact">Hire me</a><a class="textlink" href="#work">See my work <span aria-hidden="true">→</span></a></div>
 </div>
@@ -49,7 +49,7 @@
 
 <section id="about">
 <p class="eyebrow">About</p>
-<h2>About me</h2>
+<h2>About <em>me</em></h2>
 <p class="lede">I build web apps for jobs people still do by hand: running an election, comparing prices across stores, tracking down lost items on campus.</p>
 <div class="bento">
 <div class="card">
@@ -72,7 +72,7 @@
 
 <section id="services">
 <p class="eyebrow">Services</p>
-<h2>What I can build for you</h2>
+<h2>What I can <em>build</em> for you</h2>
 <p class="lede">Three kinds of work I take on. Each one has a project of mine you can open and try.</p>
 <div class="svc">
 <div class="svcrow"><h3>Management systems</h3><div class="svcbody"><p>Record-keeping, inventory or voting systems that replace spreadsheets and paper. I start from how your team already works, so the system fits the process instead of forcing a new one.</p><ul class="svclist"><li>Sign-in with roles, so each person sees only what they should</li><li>Records you can search, filter and export</li><li>Reports and totals that update on their own</li></ul><p class="svcnote">Example: <a href="case-cpcms.html">CPCMS</a></p></div></div>
@@ -83,7 +83,7 @@
 
 <section>
 <p class="eyebrow">Process</p>
-<h2>How I work</h2>
+<h2>How I <em>work</em></h2>
 <p class="lede">How a project runs, from the first conversation to a link you can share.</p>
 <ol class="timeline">
 <li class="tlstep"><span class="num">01</span><h3>Define</h3><p>Understand the problem, map the system, and agree scope before writing code.</p></li>
@@ -94,52 +94,68 @@
 
 <section id="work">
 <p class="eyebrow">Work</p>
-<h2>Selected projects</h2>
+<h2>Selected <em>projects</em></h2>
 <!-- To use a real screenshot: replace the <div class="ph">…</div> with <img src="assets/your-file.png" alt="…"> -->
 <article class="proj rv">
-<div class="frame"><div class="bar"><i></i><i></i><i></i><span>cpcms · sample data</span></div>
-<div class="view"><div class="inner"><img src="assets/cpcms-dashboard.png" alt="CPCMS dashboard with sample children, risk levels, rights progress and follow-ups due soon" width="1440" height="900" loading="lazy"></div></div></div>
-<h3>CPCMS</h3>
+<div class="stage"><div class="frame"><div class="bar"><i></i><i></i><i></i><span>cpcms · sample data</span></div>
+<div class="view"><div class="inner"><img src="assets/cpcms-dashboard.png" alt="CPCMS dashboard with sample children, risk levels, rights progress and follow-ups due soon" width="1440" height="900" loading="lazy"></div></div></div></div>
+<div class="projtext">
+<span class="pnum">01</span>
+<h3>CPCMS<br><em>case management</em></h3>
 <p>A case management app for Holistic Families Kenya: a register of the children they support, a case file per child across eight rights, and a score that shows each child's progress.</p>
-<p class="meta"><span><b>Client project, in use</b> · JavaScript, Supabase</span><span class="links"><a class="caselink" href="case-cpcms.html">View case study →</a></span></p>
+<p class="meta"><b>Client project, in use</b> · JavaScript, Supabase</p>
+<div class="pills"><a class="btn" href="case-cpcms.html">Case study →</a></div>
+</div>
 </article>
 
 <article class="proj rv">
-<div class="frame"><div class="bar"><i></i><i></i><i></i><span>benvog.github.io/beismart-ke</span></div>
-<div class="view"><div class="inner"><img src="assets/beismart-home.jpg" alt="BeiSmart KE home: a search box over this week's price drops" width="1280" height="800" loading="lazy"></div></div></div>
-<h3>BeiSmart KE</h3>
+<div class="stage"><div class="frame"><div class="bar"><i></i><i></i><i></i><span>benvog.github.io/beismart-ke</span></div>
+<div class="view"><div class="inner"><img src="assets/beismart-home.jpg" alt="BeiSmart KE home: a search box over this week's price drops" width="1280" height="800" loading="lazy"></div></div></div></div>
+<div class="projtext">
+<span class="pnum">02</span>
+<h3>BeiSmart KE<br><em>price comparison</em></h3>
 <p>A price comparison app for Kenyan online stores: one search checks seven stores, puts the same product's prices side by side and keeps a daily price history.</p>
-<p class="meta"><span><b>Final-year project, rebuilt</b> · Python, FastAPI</span><span class="links"><a class="caselink" href="https://benvog.github.io/beismart-ke/" target="_blank" rel="noopener">Live demo ↗</a><a class="caselink" href="case-beismart.html">View case study →</a></span></p>
+<p class="meta"><b>Final-year project, rebuilt</b> · Python, FastAPI</p>
+<div class="pills"><a class="btn" href="case-beismart.html">Case study →</a><a class="btn ghost" href="https://benvog.github.io/beismart-ke/" target="_blank" rel="noopener">Live demo ↗</a></div>
+</div>
 </article>
 
 <article class="proj rv">
-<div class="frame"><div class="bar"><i></i><i></i><i></i><span>voting-system</span></div>
-<div class="view"><div class="inner"><img src="assets/voting-landing.png" alt="VoteMS landing page with a live election countdown and turnout bar" width="1280" height="800" loading="lazy"></div></div></div>
-<h3>Voting System</h3>
+<div class="stage"><div class="frame"><div class="bar"><i></i><i></i><i></i><span>voting-system</span></div>
+<div class="view"><div class="inner"><img src="assets/voting-landing.png" alt="VoteMS landing page with a live election countdown and turnout bar" width="1280" height="800" loading="lazy"></div></div></div></div>
+<div class="projtext">
+<span class="pnum">03</span>
+<h3>Voting<br><em>system</em></h3>
 <p>An online election system: voters log in with their registration number, vote one position at a time on any device, and see results the moment voting closes.</p>
-<p class="meta"><span><b>Built for Kabarak University</b> · PHP, MySQL</span><span class="links"><a class="caselink" href="https://tally.xo.je" target="_blank" rel="noopener">Live demo ↗</a><a class="caselink" href="case-voting.html">View case study →</a></span></p>
+<p class="meta"><b>Built for Kabarak University</b> · PHP, MySQL</p>
+<div class="pills"><a class="btn" href="case-voting.html">Case study →</a><a class="btn ghost" href="https://tally.xo.je" target="_blank" rel="noopener">Live demo ↗</a></div>
+</div>
 </article>
 
 <article class="proj rv">
-<div class="frame"><div class="bar"><i></i><i></i><i></i><span>trace-hub.vercel.app</span></div>
-<div class="view"><div class="inner"><img src="assets/tracehub-home.jpg" alt="TraceHub home page: a lost-and-found hero with buttons to report or browse items" width="1280" height="800" loading="lazy"></div></div></div>
-<h3>TraceHub</h3>
+<div class="stage"><div class="frame"><div class="bar"><i></i><i></i><i></i><span>trace-hub.vercel.app</span></div>
+<div class="view"><div class="inner"><img src="assets/tracehub-home.jpg" alt="TraceHub home page: a lost-and-found hero with buttons to report or browse items" width="1280" height="800" loading="lazy"></div></div></div></div>
+<div class="projtext">
+<span class="pnum">04</span>
+<h3>TraceHub<br><em>lost &amp; found</em></h3>
 <p>A lost-and-found web app for reporting and finding lost items across campuses.</p>
-<p class="meta"><span><b>Group project, live</b> · Web app, lost &amp; found</span><span class="links"><a class="caselink" href="https://trace-hub.vercel.app/" target="_blank" rel="noopener">Live demo ↗</a><a class="caselink" href="case-tracehub.html">View case study →</a></span></p>
+<p class="meta"><b>Group project, live</b> · Web app, lost &amp; found</p>
+<div class="pills"><a class="btn" href="case-tracehub.html">Case study →</a><a class="btn ghost" href="https://trace-hub.vercel.app/" target="_blank" rel="noopener">Live demo ↗</a></div>
+</div>
 </article>
 </section>
 
 <!-- Hidden until there are real quotes: remove "hidden" and replace the placeholder below -->
 <section hidden>
 <p class="eyebrow">Testimonials</p>
-<h2>What clients say</h2>
+<h2>What clients <em>say</em></h2>
 <p class="lede">Feedback from clients, once there's some to show.</p>
 <div class="tplaceholder">No testimonials yet — ask a client for a line once a project wraps, and it goes here.</div>
 </section>
 
 <section id="faq">
 <p class="eyebrow">FAQ</p>
-<h2>Frequently asked questions</h2>
+<h2>Frequently asked <em>questions</em></h2>
 <div class="faq">
 <details class="faqitem" open><summary>What kind of projects do you work on?</summary><p>Management and record-keeping systems, web apps and dashboards, and automation or scraping tools for small organizations and businesses.</p></details>
 <details class="faqitem"><summary>Do you take on freelance or full-time work?</summary><p>Freelance projects now, and I'm open to full-time software engineering roles after graduation.</p></details>
@@ -151,7 +167,7 @@
 
 <section id="contact">
 <p class="eyebrow">Contact</p>
-<h2>Get in touch</h2>
+<h2>Get in <em>touch</em></h2>
 <p class="lede">Email me at <a href="mailto:techsavvyzone@gmail.com">techsavvyzone@gmail.com</a>, message me on <a href="https://wa.me/254748311310" target="_blank" rel="noopener">WhatsApp</a>, or use the form below.</p>
 <!-- Formspree form "Portfolio contact" (formspree.io, techsavvyzone@gmail.com); submissions are emailed there -->
 <form action="https://formspree.io/f/myezqeje" method="POST">
