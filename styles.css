@@ -36,10 +36,8 @@ img{max-width:100%;display:block}
 .photo{position:relative;justify-self:center;width:min(320px,80%)}
 .photo .frame-ph{aspect-ratio:4/5;border-radius:20px;background:linear-gradient(160deg,#1a1d13,#0e0f0b);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:.85rem;text-align:center;padding:20px}
 .photo img{border-radius:20px;aspect-ratio:4/5;object-fit:cover}
-.status{display:inline-flex;align-items:center;gap:8px;font-size:.82rem;color:#a8e06a;border:1px solid #2a3a1a;background:rgba(184,220,74,.08);padding:5px 12px;border-radius:99px;margin-bottom:18px}
-.status i{position:relative;width:8px;height:8px;border-radius:50%;background:var(--lime)}
-.status i::after{content:"";position:absolute;inset:0;border-radius:50%;background:var(--lime);animation:pulse 1.8s ease infinite}
-@keyframes pulse{from{transform:scale(1);opacity:.5}to{transform:scale(3.25);opacity:0}}
+.status{display:inline-flex;align-items:center;gap:8px;font-size:.82rem;color:var(--lime);border:1px solid #2a3a1a;background:rgba(184,220,74,.08);padding:5px 12px;border-radius:99px;margin-bottom:18px}
+.status i{width:8px;height:8px;border-radius:50%;background:var(--lime)}
 
 section{padding:56px 0;border-top:1px solid var(--line);scroll-margin-top:76px}
 .eyebrow{color:var(--lime);font:600 .85rem "DM Sans",sans-serif;text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px}
@@ -86,7 +84,7 @@ h2{font-size:2.6rem;font-weight:800;margin-bottom:14px}
 .tlstep p{margin:0;color:var(--muted)}
 
 /* projects */
-.proj{display:grid;gap:28px;padding:56px 0}
+.proj{display:grid;gap:28px;padding:56px 0;overflow-x:clip}
 .proj:first-of-type{padding-top:0}
 .proj:last-of-type{padding-bottom:0}
 .stage{--h:230px;position:relative;isolation:isolate}
